@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة إدارة المستشفى</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>لوحة إدارة المستشفى 🏥 <span id="current_time" class="date-time"></span></h1>
+        <div class="stats">
+            <p>إجمالي المواعيد اليوم: <span id="today_appointments">-</span> 🗓</p>
+            <p>مواعيد الغد: <span id="tomorrow_appointments">-</span> 🗓</p>
+            <p>المكالمات المستلمة: <span id="handled_calls">-</span> 📞</p>
+            <p>مرضى الطوارئ: <span id="emergency_patients">-</span> 🚑</p>
+            <p>المرضى الراقدين: <span id="admitted_patients">-</span> 🛏️</p>
+            <p>العمليات الجراحية اليوم: <span id="total_surgeries">-</span> 🔬</p>
+        </div>
+
+        <button id="toggleSurgeryList">🔽 عرض قائمة العمليات الجراحية</button>
+        <ul id="surgery_list" class="hidden"></ul>
+
+        <button id="toggleTopDoctorsList">🔽 عرض قائمة أفضل الأطباء حسب المواعید اسبوعیا</button>
+        <ul id="top_doctors_list" class="hidden"></ul>
+
+        <button id="toggleTopSurgeonsList">🔽 عرض قائمة أفضل الجراحين حسب عدد عمليات اسبوعيا</button>
+        <ul id="top_surgeons_list" class="hidden"></ul>
+
+        <p>🗓 آخر تحديث: <span id="last_updated">-</span></p>
+        <button id="refresh_data">🔄 تحديث البيانات</button>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        function updateRealTime() {
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+            document.getElementById('current_time').textContent = now.toLocaleDateString('ar-IQ', options);
+        }
+        setInterval(updateRealTime, 1000);
+    </script>
+</body>
+</html>
