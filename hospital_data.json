@@ -1,0 +1,21 @@
+{
+  "last_updated": "2025.02.16 14:03",
+  "today_appointments": 90,
+  "tomorrow_appointments": 120,
+  "handled_calls": 80,
+  "emergency_patients": 400,
+  "admitted_patients": 14,
+  "total_todays_surgeries": 15,
+  "todays_surgeries": [
+    { "name": "عملية القلب المفتوح", "doctor": "د. أحمد علي" },
+    { "name": "عملية زرع الكلى", "doctor": "د. سعيد حسن" }
+  ],
+  "top_doctors_weekly": [
+    { "name": "د. أحمد شامل", "count": 25 },
+    { "name": "د. يوسف كريم", "count": 20 }
+  ],
+  "top_surgeons_weekly": [
+    { "name": "د. محمد سعيد", "count": 10 },
+    { "name": "د. علي الطاهر", "count": 8 }
+  ]
+}
