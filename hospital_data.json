@@ -1,21 +1,27 @@
 {
-  "last_updated": "2025.02.16 14:03",
-  "today_appointments": 90,
-  "tomorrow_appointments": 120,
-  "handled_calls": 80,
-  "emergency_patients": 400,
-  "admitted_patients": 14,
-  "total_todays_surgeries": 15,
+  "last_updated": "2025.02.17 14:03",
+  "today_appointments": 288,
+  "tomorrow_appointments": 175,
+  "handled_calls": 460,
+  "emergency_patients": 10,
+  "admitted_patients": 53,
+  "total_todays_surgeries": 10,
   "todays_surgeries": [
-    { "name": "عملية القلب المفتوح", "doctor": "د. أحمد علي" },
-    { "name": "عملية زرع الكلى", "doctor": "د. سعيد حسن" }
+    { "name": "عملية القيصرية", "doctor": "د. شەهلا يوسف" },
+    { "name": "جراحة الثدي", "doctor": "د. نەریمان فتاح" },
+    { "name": "عملية تنظير الرحم", "doctor": "د. شەهلا يوسف" },
+    { "name": "عملية المياه البيضاء و عدسة داخل العين", "doctor": "د. شيلان صالح" },
+    { "name": "المتبرع بزراعة الكلى", "doctor": "د. شاخەوان حمە امين" },
+    { "name": "متلقي زرع الكلى", "doctor": "د. اسماعيل حمە امين" },
+    { "name": "عملية استئصال نهاية الشريان السباتي الأيسر", "doctor": "د. سەلام عبد الامير" },
+    { "name": "تنظيف الجروح وتضميدها", "doctor": "د. سەلام عبد الامير + د. ئاراس عثمان" },
+    { "name": "عملية استئصال البواسير", "doctor": "د. کوردۆ جمال" },
+    { "name": "تنظيف الجروح وتضميدها", "doctor": "د. احمد فاضل" }
   ],
   "top_doctors_weekly": [
-    { "name": "د. أحمد شامل", "count": 25 },
-    { "name": "د. يوسف كريم", "count": 20 }
+    { "name": "د. بختيار", "count": 95 }
   ],
   "top_surgeons_weekly": [
-    { "name": "د. محمد سعيد", "count": 10 },
-    { "name": "د. علي الطاهر", "count": 8 }
+    { "name": "د. شەهلا يوسف", "count": 12 }
   ]
 }
